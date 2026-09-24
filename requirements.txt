@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+motor
+pymongo
+pydantic[email]
+pydantic-settings
+bcrypt
+python-jose[cryptography]
+python-multipart
+chromadb
+sentence-transformers
+pdfplumber
+python-docx
+transformers
+torch
+torchvision
+Pillow
