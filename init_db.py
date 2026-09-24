@@ -1,9 +1,10 @@
 import asyncio
 from motor.motor_asyncio import AsyncIOMotorClient
 
-# Configuration from your settings
-MONGODB_URI = "mongodb://localhost:27017"
-DATABASE_NAME = "ai_document_summarizer"
+from app.core.config import settings
+
+MONGODB_URI = settings.MONGODB_URI
+DATABASE_NAME = settings.DATABASE_NAME
 
 async def init_db():
     print("Connecting to MongoDB...")
